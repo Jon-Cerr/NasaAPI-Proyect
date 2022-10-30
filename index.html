@@ -5,12 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imagen astronómica del día</title>
+    <meta
+      name="description"
+      content="Página web que utiliza la API de la Nasa para mostrar todas las imágenes que fueron capturadas en un día específico."
+    />
+    <meta
+      name="keywords"
+      content="Nasa, fotos nasa, universo, imágenes del universo, telescopio, Hubble, Nasa API, James Webb"
+    />
+    <meta name="author" content="Jonathan Hernandez" />
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <meta name="description" content="Página web que utiliza la API de la Nasa para mostrar todas las imágenes que fueron capturadas en un día específico.">
-    <meta name="keywords" content="Nasa, fotos nasa, universo, imágenes del universo, telescopio, Hubble, Nasa API, James Webb">
-    <meta name="author" content="Jonathan Hernandez">
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="assets/icon.png">
   </head>
   <body>
     <main class="main" id="main">
@@ -24,20 +36,26 @@
       </article>
     </main>
     <section class="data-container" id="data-container">
-        <h2 class="data__title">Introduce una fecha y visualiza la imagen :)</h2>
-        <article class="search-container">
-            <label for="date">
-                <input type="date" name="date" id="date" title="Escribe una fecha" class="search__date">
-            </label>
-            <button type="submit" class="search__button">Buscar</button>
-        </article>
-        <article class="fetch__container">
-            <figure class="data__figure">
-                <!-- <img class="img_figure"> -->
-                <!-- <p class="fetch_title"></p> -->
-            </figure>
-            <aside class="explanation_aside"></aside>
-        </article>
+      <h2 class="data__title">Introduce una fecha y visualiza la imagen :)</h2>
+      <article class="search-container">
+        <label for="date">
+          <input
+            type="date"
+            name="date"
+            id="date"
+            title="Escribe una fecha"
+            class="search__date"
+          />
+        </label>
+        <button type="submit" class="search__button">Buscar</button>
+      </article>
+      <article class="fetch__container">
+        <figure class="data__figure">
+          <!-- <img class="img_figure"> -->
+          <!-- <p class="fetch_title"></p> -->
+        </figure>
+        <aside class="explanation_aside"></aside>
+      </article>
     </section>
     <script src="js/app.js" defer type="module"></script>
   </body>
