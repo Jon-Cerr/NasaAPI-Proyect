@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronomy Picture Of the Day</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main" id="main">
+      <article class="main__container">
+        <h1 class="main__title">¡Explora las maravillas del universo!</h1>
+        <p class="main__info">
+          Conoce las imágenes fotografiadas por la NASA y sus telescopios más
+          famosos, tomadas en una fecha especifica. Explora y diviertete
+          conociendo lo hermoso que es nuestro universo.
+        </p>
+      </article>
+    </main>
+    <section class="data-container" id="data-container">
+        <h2 class="data__title">Introduce una fecha y visualiza la imagen :)</h2>
+        <article class="search-container">
+            <label for="date">
+                <input type="date" name="date" id="date" title="Escribe una fecha" class="search__date">
+            </label>
+            <button type="submit" class="search__button">Buscar</button>
+        </article>
+        <article class="fetch__container">
+            <figure class="data__figure">
+                <!-- <img class="img_figure"> -->
+                <!-- <p class="fetch_title"></p> -->
+            </figure>
+            <aside class="explanation_aside"></aside>
+        </article>
+    </section>
+    <script src="js/app.js" defer type="module"></script>
+  </body>
+</html>
